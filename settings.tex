@@ -1,0 +1,49 @@
+\usepackage[scaled=.92]{helvet}
+\KOMAoption{chapterprefix}{false}
+\DeclareSectionCommand[%
+innerskip=0pt,%0.5\baselineskip
+font={\Large},
+]{chapter}
+
+\DeclareSectionCommand[%
+font={\large},
+]{section}
+
+\DeclareSectionCommand[%
+font={\normalsize},
+]{subsection}
+
+\RedeclareSectionCommand[
+  %runin=false,
+  afterindent=false,
+  beforeskip=0.5\baselineskip,
+  afterskip=0.5\baselineskip]{chapter}
+\RedeclareSectionCommand[
+  %runin=false,
+  afterindent=false,
+  beforeskip=0.5\baselineskip,
+  afterskip=0.5\baselineskip]{section}
+\RedeclareSectionCommand[
+  %runin=false,
+%  afterindent=false,
+%  beforeskip=0pt,
+%  afterskip=0.1\baselineskip
+  ]{subsection}
+
+% \RedeclareSectionCommand[
+%   runin=true,
+%   %afterindent=false,
+%   beforeskip=0\baselineskip,
+%   afterskip=1em
+%   ]{paragraph}
+
+% \setlength{\parskip}{14pt} %check for a better KOMA option here
+\setlength{\parindent}{1cm}
+%\usepackage[fontsize=12.5pt]{scrextend}
+\usepackage{csquotes}
+\usepackage{epigraph}
+%\hypersetup{colorlinks}% uncomment this line if you prefer colored hyperlinks (e.g., for onscreen viewing)
+\input{borrowed_tufte}
+\usepackage{microtype}
+\usepackage{bookmark}
+%\usepackage[hidelinks]{hyperref}

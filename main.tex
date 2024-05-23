@@ -1,0 +1,48 @@
+% book example for classicthesis.sty
+\PassOptionsToPackage{hidelinks}{hyperref}
+\documentclass[fontsize=12pt,a5paper,BCOR=12mm,DIV=calc,twoside]{scrbook}
+\input{settings}
+% \documentclass[fontsize=13pt,footinclude=true,headinclude=true,letterpaper,pagesize]{scrbook} % KOMA-Script book
+% %\usepackage[T1]{fontenc} 
+% \usepackage{graphicx}
+% \usepackage{lipsum}
+% \usepackage[linedheaders,pdfspacing]{classicthesis} % ,manychapters
+% \usepackage[document]{ragged2e}
+% \usepackage{csquotes}
+% \input{borrowed_tufte}
+% \usepackage{parskip}
+
+%\usepackage[osf]{libertine}
+\frontmatter
+%\pagenumbering{gobble} 
+\begin{document}
+
+    \input{title}
+    \input{copholon}
+%  \tableofcontents 
+
+\mainmatter
+\pagenumbering{arabic} 
+    \chapter*{Preface}
+    \input{chapters/0-preface}
+    \chapter*{Chapter I}
+    \input{chapters/1-chapter}
+    \chapter*{Chapter II}
+    \input{chapters/2-chapter}
+    \chapter*{Chapter III}
+    \input{chapters/3-chapter}
+    \chapter*{Chapter IV}
+    \input{chapters/4-chapter}
+    \chapter*{Chapter V}
+    \input{chapters/5-chapter}
+    \chapter*{Chapter VI}
+    \input{chapters/6-chapter}
+    \chapter*{Chapter VII}
+    \input{chapters/7-chapter}
+    \chapter*{Chapter VIII}
+    \input{chapters/8-chapter}
+    \chapter*{Chapter IX}
+    \input{chapters/9-chapter}
+     \chapter*{Chapter X}
+    \input{chapters/10-chapter}
+\end{document}
